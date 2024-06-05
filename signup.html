@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Sign-Up-Page</Signup-HTML></title>
+  </head>
+  <body class="signupBody">
+    <div class="loginLogo">
+      <h1><span class="nerd">Nerd</span><span class="net">Net</span></h1>
+    </div>
+    <div class="signupBox">
+      <form action="login.html" method="post">
+        <div class="createanAccount"><h2>Create an Account</h2></div>
+        <div>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="First and Last Name *"
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Choose a Username *"
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@address.com *"
+            required
+          />
+        </div>
+        <div>
+          <div class="passwordContainer">
+            <input
+              class="passwordInput"
+              type="password"
+              id="newPassword"
+              name="newPassword"
+              placeholder="Create New Password *"
+              required
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}"
+              title="Must contain at least one number, one uppercase and lowercase letter, one special character, and at least 8 or more characters"
+            />
+            <i class="fas fa-eye showPasswordIcon"></i>
+          </div>
+        </div>
+        <div>
+          <div class="passwordContainer">
+            <input
+              class="passwordInput"
+              type="password"
+              id="confirmNewPassword"
+              name="confirmNewPassword"
+              placeholder="Re-enter New Password *"
+              required
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}"
+              title="Must contain at least one number, one uppercase and lowercase letter, one special character, and at least 8 or more characters"
+            />
+            <i class="fas fa-eye showPasswordIcon"></i>
+          </div>
+        </div>
+        <div class="signupText">
+          <label for="profilePic">Upload a Profile Picture</label>
+          <input
+            class="signupProfilePic"
+            type="file"
+            id="profilePic"
+            name="profilePic"
+          />
+        </div>
+        <div class="signupText">
+          <label for="bio">Share your Bio</label>
+          <textarea
+            rows="3"
+            id="bio"
+            name="bio"
+            placeholder="I enjoy programming..."
+          ></textarea>
+        </div>
+        <div class="signupText">
+          <label for="referral">How did you hear about us?</label>
+          <select id="referral" name="referral">
+            <option value="selectOption">(select one)</option>
+            <option value="schoolUni">School/University</option>
+            <option value="friendsFamily">Friends/Family</option>
+            <option value="socialMedia">Social Media</option>
+            <option value="ads">Online Ads</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="acceptTerms">
+          <label for="termsAndConditions">
+            <input
+              class="inline"
+              id="termsAndConditions"
+              type="checkbox"
+              required
+              name="termsAndConditions"
+            />
+            I accept the <a href="terms.html">Terms and Conditions</a>
+          </label>
+        </div>
+        <div>
+          <button type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
+    <div class="loginRedirect"><a href="login.html">Login</a></div>
+  </body>
+  <footer class="loginFooter">
+    <div class="loginFooterBox">
+      <p>
+        Got a question? Email
+        <a
+          href="https://mail.google.com/mail/u/0/#inbox"
+          target="GET GMAIL BRUH"
+          >nerdnet@gmail.com</a
+        >
+      </p>
+      <p class="footerLinks">
+        <a href="about.html">About Us</a>
+        <a href="terms.html">Terms and Conditions</a>
+      </p>
+      <p class="cpFooter">
+        Designed by <span class="cpLogo1"> Nerd</span
+        ><span class="cpLogo2">Net</span>
+      </p>
+    </div>
+  </footer>
+</html>

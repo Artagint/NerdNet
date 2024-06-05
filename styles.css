@@ -1,0 +1,1104 @@
+/* Styling body and headers for ALL files ------------------------------------ */
+body {
+  background-color: #0c0c0c;
+  color: white;
+  font-family: Oswald, sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: Courier;
+}
+
+/* Styling the 'NerdNet' logo for ALL files ---------------------------------- */
+.nerd {
+  color: rgb(106, 7, 163, 0.821);
+  text-shadow: 0 0 0.5rem rgba(106, 7, 163, 1);
+  font-size: 121%;
+}
+.net {
+  color: rgba(123, 214, 230, 0.9);
+  text-shadow: 0 0 0.5rem rgba(123, 214, 230, 0.8);
+  font-size: 121%;
+}
+/* Styling for the 'Home' page (main.html) ----------------------------------- */
+/* Header Styling ----------------------- */
+.logoMain {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding-left: 1.94rem;
+  z-index: 1000;
+}
+/* Header Styling */
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.938rem 1rem;
+  background-color: #080808;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background-image: linear-gradient(
+    to right,
+    rgb(123, 214, 230) 30%,
+    rgb(106, 7, 163)
+  );
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 0.063rem;
+  padding-bottom: 2.25rem;
+}
+
+.mainNavBar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding-left: 14rem;
+  padding-top: 1.11rem;
+}
+
+.mainNavBar li {
+  margin-right: 1.51rem;
+}
+
+.mainNavBar a {
+  color: rgba(255, 255, 255, 0.876);
+  text-decoration: none;
+  font-size: 1.01rem;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.mainNavBar a:hover {
+  color: rgba(148, 148, 148, 0.911);
+}
+
+.rightSideContainer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.3rem;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.searchBar input {
+  padding: 0.431rem;
+  border: 1px solid rgba(255, 255, 255, 0.511);
+  background-color: #0c0c0c;
+  border-radius: 0.25rem 0 0 0.25rem;
+  outline: none;
+  color: rgba(255, 255, 255, 0.821);
+}
+
+.searchBar button {
+  padding: 0.511rem;
+  border: none;
+  background-color: rgba(123, 214, 230, 0.911);
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 550;
+  border-radius: 0 0.27rem 0.27rem 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.searchBar button:hover {
+  background: rgb(2, 29, 78);
+  background: linear-gradient(
+    201deg,
+    rgba(106, 7, 163, 0.911) 11%,
+    rgba(123, 214, 230, 0.911) 69%
+  );
+  box-shadow: none;
+}
+
+.searchBar button:active {
+  font-size: 0.851rem;
+}
+
+.profileMenu {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-right: 2rem;
+  padding-top: 0.3rem;
+}
+
+.profilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 21px;
+  background-color: rgba(56, 56, 56, 0.7);
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border: 1px solid #444;
+  border-radius: 0.25rem;
+  font-size: 0.751rem;
+}
+
+.dropdownMenu a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdownMenu a:hover {
+  background-color: rgba(8, 8, 8, 0.7);
+}
+
+.dropdownMenu a:active {
+  font-size: 0.91rem;
+}
+
+.profileMenu:hover .dropdownMenu {
+  display: block;
+}
+
+/* Styling for the Body of the webpage */
+/* Styling for the summary box */
+.summaryBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+  margin-bottom: -12rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  width: 100%;
+  background-color: #0c0c0c;
+  color: rgba(255, 255, 255, 0.821);
+  border-radius: none;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.summaryBox p {
+  text-align: left;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* Styling for the flashcard container */
+.courseContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-top: 10rem;
+}
+
+/* Styling for the flashcard */
+.course {
+  background-color: #0c0c0c;
+  color: white;
+  border-radius: 7px;
+  width: 100%;
+  margin: 2.71rem 0;
+  perspective: 1000px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.courseInner {
+  position: relative;
+  width: 100%;
+  height: 12rem;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+
+.courseFront,
+.courseBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+
+/* Animate the cards */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.courseFront {
+  background: linear-gradient(
+    201deg,
+    rgba(106, 7, 163, 0.821) 11%,
+    rgba(123, 214, 230, 0.821) 69%
+  );
+  background-size: 169% 169%;
+  animation: gradientAnimation 7.11s ease infinite;
+  color: rgb(8, 8, 8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.31rem;
+  font-weight: bold;
+  padding: 1rem 1rem;
+  box-shadow: none;
+}
+
+.courseBack {
+  background-color: #080808;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+  border: 2px solid transparent;
+  border-image: linear-gradient(
+    45deg,
+    rgba(123, 214, 230, 0.9) 20%,
+    rgba(106, 7, 163, 0.821)
+  );
+  border-image-slice: 1;
+  min-height: 12rem;
+  height: auto;
+}
+
+.course:hover .courseInner {
+  transform: rotateY(180deg);
+}
+
+.courseBack button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(123, 214, 230, 1);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.courseBack button:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(106, 7, 163, 1) 9%,
+    rgba(123, 214, 230, 1) 69%
+  );
+}
+
+.courseBack button:active {
+  transform: scale(1.07);
+}
+
+/* Styling for YT link */
+.profMaciasYTlink {
+  font-style: italic;
+}
+.summaryBox a:link {
+  color: rgba(255, 255, 255, 1);
+}
+.summaryBox a:visited {
+  color: rgba(255, 255, 255, 1);
+}
+.summaryBox a:hover {
+  color: rgba(123, 214, 230, 1);
+  text-decoration: underline;
+}
+.summaryBox a:active {
+  color: rgb(255, 255, 255, 0.75);
+}
+
+/* Styling for footer */
+.mainBody {
+  margin: 0;
+  padding: 0;
+}
+.mainFooter {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  background-color: rgb(8, 8, 8);
+  background-image: linear-gradient(
+    to left,
+    rgb(123, 214, 230) 30%,
+    rgb(106, 7, 163)
+  );
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 0.06rem;
+  padding-top: 0.3rem;
+}
+.mainFooterBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.31rem;
+}
+.mainFooterLinks a {
+  margin-right: 1.31rem;
+}
+.mainFooterLinks a:last-child {
+  margin-right: 0;
+}
+.mainFooterLinks {
+  margin-top: -0.31rem;
+}
+.maincpFooter {
+  margin-top: -0.31rem;
+  margin-bottom: 0.063rem;
+}
+/* Styling links in the footer */
+.mainFooter a:link {
+  color: rgb(184, 184, 184, 0.75);
+  text-decoration: none;
+}
+.mainFooter a:visited {
+  color: rgb(184, 184, 184, 0.75);
+}
+.mainFooter a:hover {
+  color: rgb(255, 255, 255, 0.75);
+  text-decoration: underline;
+}
+.mainFooter a:active {
+  color: rgb(255, 255, 255, 0.75);
+}
+.maincpFooter p {
+  color: rgba(255, 255, 255, 0.821);
+}
+.maincpLogo1 {
+  color: rgba(106, 7, 163);
+}
+.maincpLogo2 {
+  color: rgba(123, 214, 230);
+}
+
+/* Styling for 'Sign Up' page (signup.html) ---------------------------------- */
+/* Login body redirect */
+.loginRedirect {
+  position: fixed;
+  top: 1.511rem;
+  right: 1.511rem;
+  z-index: 1000;
+}
+.loginRedirect a {
+  padding: 0.511rem 1.311rem;
+  z-index: 1000;
+  background-color: #0c0c0c;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+.loginRedirect a:hover {
+  background-color: rgb(8, 8, 8);
+  border-image: linear-gradient(
+    45deg,
+    rgba(123, 214, 230, 0.9) 20%,
+    rgba(106, 7, 163, 0.821)
+  );
+  border-image-slice: 1;
+  transform: scale(1.03);
+}
+.loginRedirect a:active {
+  scale: 0.95;
+}
+/* Body of the page, sign up box */
+.createanAccount {
+  font-size: 121%;
+  text-align: center;
+}
+.signupBody {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 55rem;
+  margin: 0;
+}
+.signupBody p {
+  font-size: 85%;
+}
+.signupBox {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgb(8, 8, 8);
+  width: 100%;
+  max-width: 25rem;
+  box-sizing: border-box;
+  margin-top: 0.31rem;
+  padding-top: 0.81rem;
+  padding-bottom: 2.21rem;
+  z-index: 1000;
+  border: 5px solid transparent;
+  border-image: linear-gradient(
+      45deg,
+      rgba(123, 214, 230) 20%,
+      rgba(106, 7, 163)
+    )
+    1 stretch;
+}
+
+.signupBox div {
+  width: 100%;
+  margin: 0.7rem 0;
+}
+.signupBox label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.711px;
+}
+.signupBox input[type="text"],
+.signupBox input[type="password"],
+.signupBox input[type="email"],
+.signupBox textarea,
+.signupBox select {
+  width: 100%;
+  padding-top: 0.44rem;
+  padding-bottom: 0.44rem;
+  padding-left: 0.44rem;
+  box-sizing: border-box;
+  background-color: rgb(8, 8, 8);
+  border-radius: 0.25rem;
+  border: 1px solid #4e4e4e;
+  color: rgb(255, 255, 255, 0.9);
+}
+.signupProfilePic {
+  padding: 0.44rem 0;
+  color: rgba(255, 255, 255, 0.69);
+}
+.signupText {
+  color: rgba(255, 255, 255, 0.911);
+}
+.acceptTerms a:link {
+  color: rgb(184, 184, 184, 0.75);
+  text-decoration: none;
+}
+.acceptTerms a:visited {
+  color: rgb(184, 184, 184, 0.75);
+}
+.acceptTerms a:hover {
+  color: rgb(255, 255, 255, 0.75);
+  text-decoration: underline;
+}
+.acceptTerms a:active {
+  color: rgb(255, 255, 255, 0.75);
+}
+/* Stylong for Sign Up button */
+.signupBox button {
+  margin-top: 0.31rem;
+  margin-bottom: -0.19rem;
+  font-size: 1.2rem;
+  padding: 0.57rem 6.8rem;
+  border: none;
+  outline: none;
+  border-radius: 0.44rem;
+  cursor: pointer;
+  background-color: rgb(123, 214, 230, 0.821);
+  color: white;
+  font-weight: 700;
+  transition: 0.6s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.signupBox button:active {
+  scale: 0.92;
+}
+.signupBox button:hover {
+  background: rgb(2, 29, 78);
+  background: linear-gradient(
+    201deg,
+    rgba(106, 7, 163, 0.821) 11%,
+    rgba(123, 214, 230, 0.821) 69%
+  );
+  color: rgb(8, 8, 8);
+  box-shadow: none;
+}
+/* Footer of the page */
+.loginFooter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  background-color: rgb(8, 8, 8);
+  background-image: linear-gradient(
+    to left,
+    rgb(123, 214, 230) 30%,
+    rgb(106, 7, 163)
+  );
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 0.06rem;
+  padding-top: 0.3rem;
+}
+.loginFooterBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.31rem;
+}
+.footerLinks a {
+  margin-right: 1.31rem;
+}
+.footerLinks a:last-child {
+  margin-right: 0;
+}
+.footerLinks {
+  margin-top: -0.31rem;
+}
+.cpFooter {
+  margin-top: -0.31rem;
+  margin-bottom: 0.063rem;
+}
+/* Styling links in the footer */
+.loginFooter a:link {
+  color: rgb(184, 184, 184, 0.75);
+  text-decoration: none;
+}
+.loginFooter a:visited {
+  color: rgb(184, 184, 184, 0.75);
+}
+.loginFooter a:hover {
+  color: rgb(255, 255, 255, 0.75);
+  text-decoration: underline;
+}
+.loginFooter a:active {
+  color: rgb(255, 255, 255, 0.75);
+}
+.cpFooter p {
+  color: rgba(255, 255, 255, 0.821);
+}
+.cpLogo1 {
+  color: rgba(106, 7, 163);
+}
+.cpLogo2 {
+  color: rgba(123, 214, 230);
+}
+
+/* Styling for the 'Login' page (login.html) --------------------------------- */
+/* NerdNet logo for login and sign up */
+.loginLogo {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding-left: 1.94rem;
+  z-index: 1000;
+}
+/* Sign up body redirect */
+.signupRedirect {
+  position: fixed;
+  top: 1.511rem;
+  right: 1.511rem;
+  z-index: 1000;
+}
+.signupRedirect a {
+  padding: 0.511rem 1.311rem;
+  z-index: 1000;
+  background-color: #0c0c0c;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+.signupRedirect a:hover {
+  background-color: rgb(8, 8, 8);
+  border-image: linear-gradient(
+    45deg,
+    rgba(123, 214, 230, 0.9) 20%,
+    rgba(106, 7, 163, 0.821)
+  );
+  border-image-slice: 1;
+  transform: scale(1.03);
+}
+.signupRedirect a:active {
+  scale: 0.95;
+}
+/* Body of the page, login box */
+.welcomeBack {
+  font-size: 121%;
+  text-align: center;
+}
+.loginBody {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 45rem;
+  margin: 0;
+}
+.loginBody p {
+  font-size: 85%;
+}
+.loginBox {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgb(8, 8, 8);
+  border: 5px solid transparent;
+  border-image: linear-gradient(
+      45deg,
+      rgba(123, 214, 230) 20%,
+      rgba(106, 7, 163)
+    )
+    1 stretch;
+  width: 100%;
+  max-width: 25rem;
+  box-sizing: border-box;
+  margin-top: 0.31rem;
+  padding-top: 1.56rem;
+  padding-bottom: 4.69rem;
+  z-index: 1000;
+}
+.inputWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.44rem;
+  padding-bottom: 0.44rem;
+}
+.inputWrapper input {
+  width: 96%;
+  padding-top: 0.44rem;
+  padding-bottom: 0.44rem;
+  padding-left: 0.44rem;
+  background-color: rgb(8, 8, 8);
+  border-radius: 0.25rem;
+  border: 1px solid #4e4e4e;
+  color: rgb(255, 255, 255, 0.9);
+}
+.loginBox p {
+  text-align: center;
+  width: 100%;
+  color: rgb(255, 255, 255, 0.9);
+}
+/* Styling for password input field */
+.passandSignup {
+  padding-top: 0.44rem;
+}
+.passwordContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.inputWrapper .passwordInput {
+  width: 96%;
+  padding: 0.44rem;
+  padding-right: 5.69rem;
+  background-color: rgb(8, 8, 8);
+  border-radius: 0.25rem;
+  border: 1px solid #4e4e4e;
+  color: rgb(255, 255, 255, 0.9);
+}
+.showPasswordIcon {
+  position: absolute;
+  right: 0.63rem;
+  color: #797979;
+}
+/* Styling for login button */
+.loginBox button {
+  margin-top: 0.31rem;
+  margin-bottom: -0.19rem;
+  font-size: 1.2rem;
+  padding: 0.57rem 6.8rem;
+  border: none;
+  outline: none;
+  border-radius: 0.44rem;
+  cursor: pointer;
+  background-color: rgb(123, 214, 230, 0.821);
+  color: white;
+  font-weight: 700;
+  transition: 0.6s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.loginBox button:active {
+  scale: 0.92;
+}
+.loginBox button:hover {
+  background: rgb(2, 29, 78);
+  background: linear-gradient(
+    201deg,
+    rgba(106, 7, 163, 0.821) 11%,
+    rgba(123, 214, 230, 0.821) 69%
+  );
+  color: rgb(8, 8, 8);
+  box-shadow: none;
+}
+/* Styling links below login button */
+.loginBox a:link {
+  color: rgb(184, 184, 184, 0.75);
+  text-decoration: none;
+}
+.loginBox a:visited {
+  color: rgb(184, 184, 184, 0.75);
+}
+.loginBox a:hover {
+  color: rgb(255, 255, 255, 0.75);
+  text-decoration: underline;
+}
+.loginBox a:active {
+  color: rgb(255, 255, 255, 0.75);
+}
+.newtoNerdNet {
+  color: rgba(255, 255, 255, 0.821);
+}
+/* Footer of the page */
+.loginFooter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  background-color: rgb(8, 8, 8);
+  background-image: linear-gradient(
+    to left,
+    rgb(123, 214, 230) 30%,
+    rgb(106, 7, 163)
+  );
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 0.063rem;
+  padding-top: 0.3rem;
+}
+.loginFooterBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.31rem;
+}
+.footerLinks a {
+  margin-right: 1.31rem;
+}
+.footerLinks a:last-child {
+  margin-right: 0;
+}
+.footerLinks {
+  margin-top: -0.31rem;
+}
+.cpFooter {
+  margin-top: -0.31rem;
+  margin-bottom: 0.063rem;
+}
+/* Styling links in the footer */
+.loginFooter a:link {
+  color: rgb(184, 184, 184, 0.75);
+  text-decoration: none;
+}
+.loginFooter a:visited {
+  color: rgb(184, 184, 184, 0.75);
+}
+.loginFooter a:hover {
+  color: rgb(255, 255, 255, 0.75);
+  text-decoration: underline;
+}
+.loginFooter a:active {
+  color: rgb(255, 255, 255, 0.75);
+}
+.cpFooter p {
+  color: rgba(255, 255, 255, 0.821);
+}
+.cpLogo1 {
+  color: rgba(106, 7, 163);
+}
+.cpLogo2 {
+  color: rgba(123, 214, 230);
+}
+
+/* Styling for 'Settings' page (settings.html) ------------------------------- */
+
+/* Styling for 'Terms and Conditions' (terms.html) & 'About Us' (about.html)-- */
+/* Styling for button */
+.centerButton {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-left: -0.63rem;
+  padding-top: 0.94rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 0;
+  z-index: 1000;
+  background-color: rgb(8, 8, 8);
+  background-image: linear-gradient(
+    to right,
+    rgb(123, 214, 230) 30%,
+    rgb(106, 7, 163)
+  );
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 0.063rem;
+  padding-top: 1rem;
+}
+.centerButton button {
+  margin-top: 0.31rem;
+  margin-bottom: -0.188rem;
+  font-size: 1.2rem;
+  padding: 0.57rem 6.8rem;
+  border: none;
+  outline: none;
+  border-radius: 0.44rem;
+  cursor: pointer;
+  background-color: rgb(123, 214, 230, 0.821);
+  color: white;
+  font-weight: 700;
+  transition: 0.6s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.centerButton button:active {
+  scale: 0.92;
+}
+.centerButton button:hover {
+  background: linear-gradient(
+    to left,
+    rgba(106, 7, 163, 0.821) 20%,
+    rgba(123, 214, 230, 0.821) 60%
+  );
+  color: rgb(8, 8, 8);
+  box-shadow: none;
+}
+/* Styling for h1 */
+.termsTitle h1 {
+  background-color: rgb(8, 8, 8);
+  margin-top: 0;
+  padding-top: 0.938rem;
+  padding-bottom: 0.938rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-left: 0;
+  text-align: center;
+  z-index: 1000;
+  background-image: linear-gradient(
+    to right,
+    rgb(123, 214, 230) 30%,
+    rgb(106, 7, 163)
+  );
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 0.063rem;
+  padding-bottom: 1rem;
+}
+/* Styling for section */
+.termsSection {
+  margin-top: 6.94rem;
+  margin-bottom: 6.25rem;
+}
+.termsSection h2 {
+  margin-left: 2.31rem;
+}
+.termsSection p {
+  margin-left: 3.063rem;
+  margin-right: 3.063rem;
+  color: rgba(231, 231, 231, 0.75);
+}
+.termsBottomLine {
+  margin-bottom: 6.25rem;
+}
+/* Styling for linking Nicholas Macias's YouTube Channel */
+.profMaciasYTlink {
+  font-style: italic;
+}
+.termsSection a:link {
+  color: rgba(255, 255, 255, 1);
+}
+.termsSection a:visited {
+  color: rgba(255, 255, 255, 1);
+}
+.termsSection a:hover {
+  color: rgba(123, 214, 230, 1);
+  text-decoration: underline;
+}
+.termsSection a:active {
+  color: rgb(255, 255, 255, 0.75);
+}
+
+/* Styling for the Video Playing webpages [(cse224, cse222, cse223, engr270).html] ----------- */
+/* Styling for the summary box */
+.videoSummaryBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+  margin-bottom: -12rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  width: 100%;
+  background-color: #0c0c0c;
+  color: rgba(255, 255, 255, 0.821);
+  border-radius: none;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+.videoSummaryBox p {
+  text-align: left;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* Styling for the video container */
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-top: 12.9rem;
+}
+
+/* Styling for each video card */
+.videoCard {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+  background-color: #0c0c0c;
+  border-radius: none;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.videoCard:hover {
+  transform: scale(1.11);
+}
+
+.videoCard iframe {
+  width: 400px;
+  height: 315px;
+  border: none;
+}
+
+.videoDescription {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem;
+  background-color: #171717;
+  color: rgba(255, 255, 255, 0.711);
+  flex: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.311);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.311);
+  border-right: 1px solid rgba(255, 255, 255, 0.311);
+  transition: transform 0.2s;
+}
+
+.videoDescription:hover {
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  border-right: 1px solid rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  background-color: #080808;
+}
+
+.videoDescription p {
+  margin: 0;
+  font-size: 1rem;
+}
+/* Styling for YT link */
+.profMaciasYTlink {
+  font-style: italic;
+}
+.videoSummaryBox a:link {
+  color: rgba(255, 255, 255, 1);
+}
+.videoSummaryBox a:visited {
+  color: rgba(255, 255, 255, 1);
+}
+.videoSummaryBox a:hover {
+  color: rgba(123, 214, 230, 1);
+  text-decoration: underline;
+}
+.videoSummaryBox a:active {
+  color: rgb(255, 255, 255, 0.75);
+}
+/* Link Logo Styling */
+.logoMain a:link {
+  color: rgba(0, 0, 0, 0);
+}
+.logoMain a:visited {
+  color: rgba(123, 214, 230, 0);
+}
+.logoMain a:hover {
+  color: rgba(0, 0, 0, 0);
+}
+.logoMain a:active {
+  color: rgba(0, 0, 0, 0);
+}
