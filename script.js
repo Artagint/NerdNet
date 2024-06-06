@@ -1,4 +1,4 @@
-// Go back to previous webpage after reading terms and conditions --------------------- //
+// Go back to previous webpage after reading terms and conditions
 function goBackTerms() {
   window.history.back();
 }
@@ -7,7 +7,7 @@ function goBackTerms() {
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM fully loaded and parsed");
 
-  // Toggle between show password or text when user clicks icon
+  // Toggle between show password or text when user clicks eye icon
   const inputs = document.querySelectorAll(".passwordInput");
   const icons = document.querySelectorAll(".showPasswordIcon");
 

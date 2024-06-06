@@ -873,7 +873,7 @@ h3 {
 }
 /* Add these styles to your existing styles.css file */
 
-/* Style for message divs to display feedback messages */
+/* Style for message divs to display messages */
 .messageContainer {
   text-align: center;
   margin-top: 10px;
@@ -902,7 +902,7 @@ h3 {
 
 .showPasswordIcon {
   cursor: pointer;
-  margin-left: -30px; /* Adjust position relative to the input */
+  margin-left: -30px;
 }
 
 .passwordInput {
