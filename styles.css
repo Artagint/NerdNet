@@ -54,77 +54,51 @@ h3 {
   background-size: 100% 0.063rem;
   padding-bottom: 2.25rem;
 }
-
-.mainNavBar ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding-left: 14rem;
-  padding-top: 1.11rem;
-}
-
-.mainNavBar li {
-  margin-right: 1.51rem;
-}
-
-.mainNavBar a {
-  color: rgba(255, 255, 255, 0.876);
-  text-decoration: none;
-  font-size: 1.01rem;
+.leftSideContainer {
+  margin-left: 15rem;
+  margin-top: 0.9rem;
+  margin-bottom: -0.2rem;
   font-weight: bold;
-  transition: color 0.2s ease;
+}
+.libraryMenu {
+  display: none;
+  position: absolute;
+  right: 1;
+  top: 19px;
+  background-color: rgba(56, 56, 56, 0.9);
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  border: 1px solid #444;
+  border-radius: 0.25rem;
+  font-size: 0.751rem;
 }
 
-.mainNavBar a:hover {
-  color: rgba(148, 148, 148, 0.911);
+.libraryMenu a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
 }
 
+.libraryMenu a:hover {
+  background-color: rgba(8, 8, 8, 0.9);
+}
+
+.liraryMenu a:active {
+  font-size: 0.91rem;
+}
+
+.profileMenu:hover .libraryMenu {
+  display: block;
+}
 .rightSideContainer {
   display: flex;
   align-items: center;
   position: absolute;
   right: 1.5rem;
   top: 1.3rem;
-}
-
-.searchBar {
-  display: flex;
-  align-items: center;
-  margin-right: 2rem;
-}
-
-.searchBar input {
-  padding: 0.431rem;
-  border: 1px solid rgba(255, 255, 255, 0.511);
-  background-color: #0c0c0c;
-  border-radius: 0.25rem 0 0 0.25rem;
-  outline: none;
-  color: rgba(255, 255, 255, 0.821);
-}
-
-.searchBar button {
-  padding: 0.511rem;
-  border: none;
-  background-color: rgba(123, 214, 230, 0.911);
-  color: rgba(0, 0, 0, 0.9);
-  font-weight: 550;
-  border-radius: 0 0.27rem 0.27rem 0;
-  cursor: pointer;
-  outline: none;
-}
-
-.searchBar button:hover {
-  background: rgb(2, 29, 78);
-  background: linear-gradient(
-    201deg,
-    rgba(106, 7, 163, 0.911) 11%,
-    rgba(123, 214, 230, 0.911) 69%
-  );
-  box-shadow: none;
-}
-
-.searchBar button:active {
-  font-size: 0.851rem;
 }
 
 .profileMenu {
@@ -152,9 +126,9 @@ h3 {
   position: absolute;
   right: 0;
   top: 21px;
-  background-color: rgba(56, 56, 56, 0.7);
+  background-color: rgba(56, 56, 56, 0.9);
   min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
   z-index: 1;
   border: 1px solid #444;
   border-radius: 0.25rem;
@@ -170,7 +144,7 @@ h3 {
 }
 
 .dropdownMenu a:hover {
-  background-color: rgba(8, 8, 8, 0.7);
+  background-color: rgba(8, 8, 8, 0.9);
 }
 
 .dropdownMenu a:active {
