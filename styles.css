@@ -466,7 +466,7 @@ h3 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 55rem;
+  min-height: 35rem;
   margin: 0;
 }
 .signupBody p {

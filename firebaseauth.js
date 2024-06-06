@@ -52,6 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const password = document.getElementById("newPassword").value;
       const fullName = document.getElementById("fullName").value;
       const username = document.getElementById("username").value;
+      // Check if the password meets the required pattern
+      const passwordPattern = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}/; // Added line
+      if (!passwordPattern.test(password)) {
+        // Added line
+        showMessage("Password does not meet requirements", "signupMessage"); // Added line
+        return; // Stop the form submission // Added line
+      }
 
       createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
