@@ -871,6 +871,43 @@ h3 {
 .cpLogo2 {
   color: rgba(123, 214, 230);
 }
+/* Add these styles to your existing styles.css file */
+
+/* Style for message divs to display feedback messages */
+.messageContainer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.message {
+  display: none;
+  background-color: #9b9b9b;
+  color: #2c2c2c;
+  padding: 7px 0px;
+  margin: 4px auto;
+  font-weight: bold;
+  border: 1px solid #8f8f8f;
+  border-radius: 5px;
+  opacity: 1;
+  transition: opacity 1s;
+  width: fit-content;
+  text-align: center;
+  width: 50%;
+}
+
+.passwordContainer {
+  display: flex;
+  align-items: center;
+}
+
+.showPasswordIcon {
+  cursor: pointer;
+  margin-left: -30px; /* Adjust position relative to the input */
+}
+
+.passwordInput {
+  flex: 1;
+}
 
 /* Styling for 'Settings' page (settings.html) ------------------------------- */
 

@@ -3,8 +3,11 @@ function goBackTerms() {
   window.history.back();
 }
 
-// Toggle between show password or text when user clicks icon ------------------------- //
+// Run the script after the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
+  console.log("DOM fully loaded and parsed");
+
+  // Toggle between show password or text when user clicks icon
   const inputs = document.querySelectorAll(".passwordInput");
   const icons = document.querySelectorAll(".showPasswordIcon");
 
@@ -17,24 +20,5 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.toggle("fa-eye-slash");
       this.classList.toggle("fa-eye");
     });
-  });
-});
-
-// Compare Create New Password and Re-enter New Password in Sign Up (signup.html) ----- //
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector(".signupBox form");
-  form.addEventListener("submit", function (event) {
-    const password = document.getElementById("newPassword").value;
-    const confirmPassword = document.getElementById("confirmNewPassword").value;
-
-    if (password !== confirmPassword) {
-      alert(
-        "The passwords entered don't match! Check both password fields to ensure they match."
-      );
-      event.preventDefault();
-    } else {
-      window.location.href = "login.html";
-      event.preventDefault();
-    }
   });
 });

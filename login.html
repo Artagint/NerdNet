@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="firebaseauth.js" defer></script>
     <script src="script.js" defer></script>
     <link
       rel="stylesheet"
@@ -16,7 +17,7 @@
       <h1><span class="nerd">Nerd</span><span class="net">Net</span></h1>
     </div>
     <div class="loginBox">
-      <form action="main.html" method="get">
+      <form id="loginForm">
         <!-- Change to method="post" when backend is made -->
         <div class="welcomeBack">
           <h2>Welcome Back</h2>
@@ -45,13 +46,14 @@
             <i class="fas fa-eye showPasswordIcon"></i>
           </div>
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" id="submitSignIn">Login</button>
+        <div id="loginMessage" class="message"></div>
         <div class="passandSignup">
           <p><a href="passrecov.html">Forgot Password?</a></p>
         </div>
       </form>
     </div>
-
+    <div id="signupMessageContainer" class="messageContainer"></div>
     <div class="signupRedirect"><a href="signup.html">Sign Up</a></div>
   </body>
   <footer class="loginFooter">
